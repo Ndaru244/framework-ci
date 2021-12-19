@@ -1,2 +1,2 @@
-# Templates for adminLte
-Dashboard admin for adminLte
+# Templates from adminLte
+Dashboard admin from adminLte
