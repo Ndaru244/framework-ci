@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laporan Peminjaman</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/templates/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/templates/dist/css/adminlte.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Main content -->
+        <section class="invoice">
+            <!-- title row -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="page-header">
+                        <i class="fas fa-clipboard-list"></i> Laporan Peminjaman
+                        <small class="float-right">Date : <i id="today"></i></small>
+                    </h2>
+                </div>
+                <!-- /.col -->
+            </div>
+
+            <!-- Table row -->
+            <div class="row">
+                <div class="col-12 table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>ID Peminjaman</th>
+                                <th>Nama</th>
+                                <th>Jumlah</th>
+                                <th>Tanggal Pinjam</th>
+                                <th>Tanggal Kembali</th>
+                                <th>Pegawai</th>
+                                <th>Status Peminjaman</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>P003</td>
+                                <td>Keyboard</td>
+                                <td>1</td>
+                                <td>20 Dec 2021</td>
+                                <td>20 Dec 2021</td>
+                                <td>test</td>
+                                <td>Sudah Dikembalikan</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>P002</td>
+                                <td>Mouse</td>
+                                <td>10</td>
+                                <td>19 Dec 2021</td>
+                                <td>19 Dec 2021</td>
+                                <td>test</td>
+                                <td>Sudah Dikembalikan</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>P001</td>
+                                <td>Mouse</td>
+                                <td>1</td>
+                                <td>16 Dec 2021</td>
+                                <td>17 Dec 2021</td>
+                                <td>jeri</td>
+                                <td>Sudah Dikembalikan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- Page specific script -->
+    <script>
+        var today = new Date();
+        var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+        document.getElementById("today").innerHTML = date;
+        window.addEventListener("load", window.print());
+    </script>
+</body>
+</html>
